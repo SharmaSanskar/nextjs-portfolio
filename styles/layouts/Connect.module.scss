@@ -1,0 +1,37 @@
+@use "../utilities/variables" as *;
+
+.heading {
+  padding: 5rem 0 2rem 0;
+}
+
+.socials {
+  margin-bottom: 10rem;
+  padding: 0 3rem;
+
+  & > div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-left: 0.3rem solid $totallyPurple;
+    padding: 0 1rem;
+
+    p {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+  .link {
+    color: $totallyPurple;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: $totallyPurple;
+    text-decoration-thickness: 2px;
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .socials {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+}

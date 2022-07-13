@@ -1,0 +1,28 @@
+@mixin btn($bgcolor, $color) {
+  background-color: $bgcolor;
+  color: $color;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  a {
+    // font-size: $size;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+  &:hover {
+    background-color: darken($bgcolor, 4);
+    opacity: 0.8;
+  }
+}
+
+@mixin margin-except-last($margin) {
+  margin-bottom: $margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

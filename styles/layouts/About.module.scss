@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as m;
+
+.heading {
+  padding: 5rem 0 2rem 0;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+
+  p {
+    width: 70%;
+  }
+
+  .image {
+    margin-left: 1.5rem;
+  }
+}
+
+.about h3 {
+  margin: 1.5rem 0;
+}
+
+.certificate {
+  @include m.margin-except-last(1rem);
+
+  padding: 0 1rem;
+  border-left: 0.3rem solid $totallyPurple;
+}
+
+@media only screen and (max-width: $md) {
+  .bio {
+    flex-direction: column-reverse;
+    p {
+      width: 100%;
+    }
+
+    .image {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

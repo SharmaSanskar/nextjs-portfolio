@@ -1,0 +1,152 @@
+@use "../utilities/variables" as *;
+
+.sidenav {
+  position: fixed;
+  // top: 0;
+  left: 0;
+  // height: 100vh;
+  // width: $navWidth;
+  background-color: $darkWhite;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  height: 4rem;
+  // transition: all 0.3s ease;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  // margin: 2rem 0;
+  li {
+    position: relative;
+
+    a {
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $justLavender;
+      }
+    }
+
+    &:hover .tooltip {
+      opacity: 1;
+      top: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: $closedNavWidth + 1rem;
+      transform: translateY(-50%);
+      background-color: $justLavender;
+      box-shadow: 0 0.2rem 0.3rem rgba($color: #000000, $alpha: 0.2);
+      width: 8rem;
+      height: 2rem;
+      line-height: 2rem;
+      border-radius: 5px;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      display: none;
+    }
+  }
+}
+
+.closednav {
+  // width: $closedNavWidth;
+
+  .logo {
+    display: none;
+  }
+
+  .nav_list {
+    .tooltip {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .sidenav {
+    bottom: 0;
+    width: 100vw;
+    height: $mobileNav;
+  }
+
+  .logo_container {
+    display: none;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    li {
+      a {
+        height: 4rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+      }
+
+      .linknames {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .sidenav {
+    top: 0;
+    height: 100vh;
+    width: $navWidth;
+  }
+
+  .closednav {
+    width: $closedNavWidth;
+    a {
+      justify-content: center;
+
+      .linknames {
+        opacity: 0;
+        width: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .nav_list {
+    li {
+      padding: 0 1rem;
+      a {
+        height: 3rem;
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+      }
+    }
+
+    .linknames {
+      margin-left: 1rem;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  }
+}
