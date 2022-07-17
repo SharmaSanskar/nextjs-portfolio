@@ -2,11 +2,12 @@
 @use "../utilities/mixins" as m;
 
 .heading {
-  padding: 5rem 0 2rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -18,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
+  margin-top: 2rem;
 
   &:hover {
     background-color: darken($darkWhite, 2);
@@ -30,6 +32,9 @@
 
   li {
     margin: 1.5rem 0;
+    &:hover {
+      color: $totallyPurple;
+    }
   }
 }
 
@@ -39,7 +44,7 @@
     align-items: center;
   }
 
-  .card {
-    @include m.margin-except-last(1.5rem);
-  }
+  // .card {
+  //   @include m.margin-except-last(1.5rem);
+  // }
 }

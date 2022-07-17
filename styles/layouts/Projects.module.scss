@@ -43,7 +43,7 @@
   }
 }
 
-.buttons > .link {
+.buttons > .live {
   @include m.btn($totallyPurple, lighten($darkWhite, 1));
   margin-right: 1.5rem;
   margin-bottom: 0.5rem;

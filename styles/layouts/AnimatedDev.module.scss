@@ -1,0 +1,19 @@
+.svgContainer {
+  max-height: 300px;
+  width: fit-content;
+}
+
+.animatedFace {
+  animation: nod 2s linear infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes nod {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(12deg);
+  }
+}

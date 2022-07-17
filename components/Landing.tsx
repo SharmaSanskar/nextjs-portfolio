@@ -1,10 +1,6 @@
-import Image from "next/image";
 import styles from "../styles/layouts/Landing.module.scss";
-import {
-  IoDownloadOutline,
-  IoShareSocialOutline,
-  IoChevronForwardOutline,
-} from "react-icons/io5";
+import { IoDownloadOutline, IoChevronForwardOutline } from "react-icons/io5";
+import AnimatedDev from "./AnimatedDev";
 
 const Landing = () => {
   return (
@@ -35,12 +31,13 @@ const Landing = () => {
         </div>
       </div>
       <div className={styles.image}>
-        <Image
+        {/* <Image
           src="/dev-laptop.svg"
           alt="developer with laptop"
           width={300}
           height={300}
-        />
+        /> */}
+        <AnimatedDev />
       </div>
     </section>
   );

@@ -85,6 +85,14 @@ const Connect = () => {
           </p>
         </div>
       </div>
+      <div className={styles.quoteContainer}>
+        <blockquote>
+          Is this the <span>end?</span>
+        </blockquote>
+        <blockquote>
+          Or just a new <span>beginning</span>
+        </blockquote>
+      </div>
     </section>
   );
 };

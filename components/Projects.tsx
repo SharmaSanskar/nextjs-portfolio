@@ -22,26 +22,26 @@ const Projects = () => {
         "Next.js and Tailwind CSS web application providing information about top cryptos and latest crypto news. Also has Flask backend to serve Sentiment analysis and Price prediction ML models.",
       tags: ["Next.js", "TailwindCSS", "Flask", "Redis"],
       github: "https://github.com/SharmaSanskar/nextjs-cryptoplace",
-      live: "",
+      live: "https://cryptoplace.vercel.app",
     },
     {
       id: 2,
-      name: "Concord Video Chat",
-      img: "/concord.gif",
-      description:
-        "Video chat application with ability to add friends and create rooms. Made using React, Redux, Firebase, Node.js and SASS modules.",
-      tags: ["React", "SASS", "Node.js", "Firebase", "WebRTC"],
-      github: "https://github.com/SharmaSanskar/react-concord-videochat",
-      live: "",
-    },
-    {
-      id: 3,
       name: "GradHelp",
       img: "/gradhelp.gif",
       description:
         "React and FastAPI application that uses Machine Learning and Deep Learning to predict admission chance in top US universities and give university recommendations.",
       tags: ["ML", "React", "TailwindCSS", "FastAPI", "MongoDB"],
       github: "https://github.com/SharmaSanskar/ml-gradhelp",
+      live: "https://gradhelp.vercel.app",
+    },
+    {
+      id: 3,
+      name: "Concord Video Chat",
+      img: "/concord.gif",
+      description:
+        "Video chat application with ability to add friends and create rooms. Made using React, Redux, Firebase, Node.js and SASS modules.",
+      tags: ["React", "SASS", "Node.js", "Firebase", "WebRTC"],
+      github: "https://github.com/SharmaSanskar/react-concord-videochat",
       live: "",
     },
   ];
@@ -64,16 +64,18 @@ const Projects = () => {
                 ))}
               </h5>
               <h4 className={styles.description}>{proj.description}</h4>
-
               <div className={styles.buttons}>
-                {/* <button className={styles.link}>
-                  <a href={proj.github}>
-                    <FiExternalLink />
-                    <h5>Try it</h5>
-                  </a>
-                </button> */}
+                {proj.live ? (
+                  <button className={styles.live}>
+                    <a href={proj.live}>
+                      <FiExternalLink />
+                      <h5>Try it</h5>
+                    </a>
+                  </button>
+                ) : null}
+
                 <button className={styles.code}>
-                  <a href={proj.github}>
+                  <a href={proj.github} target="_blank" rel="noreferrer">
                     <AiOutlineGithub />
                     <h5>View Code</h5>
                   </a>

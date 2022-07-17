@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           name="description"
           content="Portfolio website for Frontend Web Developer Sanskar Sharma"
         />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Nav isClosed={isClosed} setIsClosed={setIsClosed} />

@@ -5,7 +5,6 @@
 }
 
 .socials {
-  margin-bottom: 10rem;
   padding: 0 3rem;
 
   & > div {
@@ -29,9 +28,56 @@
   }
 }
 
+.quoteContainer {
+  position: relative;
+  height: 10rem;
+  margin: 2.5rem 0;
+
+  blockquote {
+    position: absolute;
+
+    span {
+      color: $totallyPurple;
+    }
+
+    &:first-child {
+      left: 50%;
+      top: 50%;
+      transform: translate(-80%, -100%);
+
+      &:before {
+        content: "\201C";
+        position: absolute;
+        top: -4rem;
+        left: -4rem;
+        font-size: 4em;
+        font-style: italic;
+        color: rgba($color: $barelyTeal, $alpha: 0.9);
+        z-index: -1;
+      }
+    }
+
+    &:last-child {
+      right: 50%;
+      bottom: 50%;
+      transform: translate(80%, 100%);
+
+      &:after {
+        content: "\201D";
+        position: absolute;
+        top: 1rem;
+        right: -2rem;
+        font-size: 4em;
+        font-style: italic;
+        color: rgba($color: $barelyTeal, $alpha: 0.9);
+        z-index: -1;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: $md) {
   .socials {
-    margin-bottom: 5rem;
     padding: 0;
   }
 }

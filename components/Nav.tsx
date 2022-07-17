@@ -23,7 +23,7 @@ const Nav: FC<NavProps> = ({ isClosed, setIsClosed }) => {
     >
       <div className={styles.logo_container}>
         <div className={styles.logo}>
-          <h4>SanskarSharma</h4>
+          <h4 id="logo-name">Sanskar Sharma</h4>
         </div>
         <HiMenuAlt1 onClick={() => setIsClosed(!isClosed)} id="toggle" />
       </div>

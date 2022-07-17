@@ -2,6 +2,25 @@ import Image from "next/image";
 import styles from "../styles/layouts/About.module.scss";
 
 const About = () => {
+  interface Certification {
+    id: number;
+    name: string;
+    description: string;
+  }
+
+  const certifications: Certification[] = [
+    {
+      id: 1,
+      name: "IBM Data Science Professional Certificate",
+      description:
+        "Completed 10 courses related to Data Sceince and ML in Python",
+    },
+    {
+      id: 2,
+      name: "Deep Learning, IIT Ropar",
+      description: "Among one of the toppers of the course",
+    },
+  ];
   return (
     <section id="about">
       <h2 className={styles.heading}>
@@ -36,18 +55,14 @@ const About = () => {
         </div>
 
         <h3>CERTIFICATIONS</h3>
-        <div className={styles.certificate}>
-          <p>
-            <b>IBM Data Science Professional Certificate</b>
-          </p>
-          <p>Completed 10 courses related to Data Sceince and ML in Python</p>
-        </div>
-        <div className={styles.certificate}>
-          <p>
-            <b>Deep Learning, IIT Ropar</b>
-          </p>
-          <p>Among one of the toppers of the course</p>
-        </div>
+        {certifications.map((cert) => (
+          <div key={cert.id} className={styles.certificate}>
+            <p>
+              <b>{cert.name}</b>
+            </p>
+            <p>{cert.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
