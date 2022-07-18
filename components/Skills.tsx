@@ -12,6 +12,10 @@ import {
   SiFastapi,
   SiFirebase,
   SiMongodb,
+  SiGit,
+  SiDocker,
+  SiFigma,
+  SiAdobexd,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -69,6 +73,23 @@ const Skills = () => {
             </li>
             <li>
               <SiMongodb /> MongoDB
+            </li>
+          </ul>
+        </div>
+        <div className={styles.card}>
+          <h3>TOOLS</h3>
+          <ul>
+            <li>
+              <SiGit /> Git
+            </li>
+            <li>
+              <SiDocker /> Docker
+            </li>
+            <li>
+              <SiFigma /> Figma
+            </li>
+            <li>
+              <SiAdobexd /> Adobe XD
             </li>
           </ul>
         </div>

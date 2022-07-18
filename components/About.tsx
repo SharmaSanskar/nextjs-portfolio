@@ -30,26 +30,28 @@ const About = () => {
       <div className={styles.about}>
         <div className={styles.bio}>
           <p>
-            Hey, I&apos;m a Frontend Web Developer based in India. I have worked
-            with various modern web technologies building full stack web
-            applications. <br />
-            <br />I have a bachelors degree in Information Technology from Jai
-            Hind College, Mumbai. I also have a keen interest in Machine
-            Learning and I have completed some certifications to complement my
-            interest
+            Hey there, my name is Sanskar Sharma. I am a Frontend Web Developer
+            based out of India, with a Bachelor&apos;s degree in Information
+            Technology.
             <br />
-            <br />I have a bachelors degree in Information Technology from Jai
-            Hind College, Mumbai. I also have a keen interest in Machine
-            Learning and I have completed some certifications to complement my
-            interest
+            <br />I have developed a number of full stack applications over the
+            past few years using modern web technologies for both my
+            undergraduate work and personal projects. I enjoy technology because
+            it gives me the opportunity to continually learn and explore new
+            areas such as UI/UX design, web programming, and machine learning.
+            <br />
+            <br />I am result-oriented individual and believe in providing the
+            best user experience possible. In my spare time, I enjoy sketching
+            and have a keen eye for detail. Also, chances are I&apos;ve already
+            seen your favourite movie, TV show, or anime.
           </p>
           <div className={styles.image}>
             <Image
               className={styles.myimage}
               alt="My image"
-              src="/profile.jpg"
-              width={150}
-              height={150}
+              src="/profile-lavender.jpg"
+              width={200}
+              height={200}
             />
           </div>
         </div>

@@ -13,7 +13,8 @@ const Landing = () => {
           I&apos;m <b>Sanskar Sharma</b>
         </h1>
         <h3 className={styles.description}>
-          Frontend Web Developer who knows a lil&apos; bit of Machine Learning
+          Frontend Developer with a passion for creating user-centric
+          applications
         </h3>
         <div className={styles.buttons}>
           <button className={styles.contact}>

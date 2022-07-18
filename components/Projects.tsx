@@ -19,8 +19,8 @@ const Projects = () => {
       name: "CryptoPlace",
       img: "/cryptoplace.gif",
       description:
-        "Next.js and Tailwind CSS web application providing information about top cryptos and latest crypto news. Also has Flask backend to serve Sentiment analysis and Price prediction ML models.",
-      tags: ["Next.js", "TailwindCSS", "Flask", "Redis"],
+        "Next.js, TailwindCSS and Redis web application providing information about top cryptos and latest crypto news. Also has Flask backend to serve Sentiment analysis and Price prediction ML models.",
+      tags: ["Next.js", "TailwindCSS", "Flask", "Redis", "Python", "ML"],
       github: "https://github.com/SharmaSanskar/nextjs-cryptoplace",
       live: "https://cryptoplace.vercel.app",
     },
@@ -29,8 +29,8 @@ const Projects = () => {
       name: "GradHelp",
       img: "/gradhelp.gif",
       description:
-        "React and FastAPI application that uses Machine Learning and Deep Learning to predict admission chance in top US universities and give university recommendations.",
-      tags: ["ML", "React", "TailwindCSS", "FastAPI", "MongoDB"],
+        "React, FastAPI and MongoDB application that uses Machine Learning and Deep Learning models to predict admission chance in top US universities and give university recommendations based on user profile.",
+      tags: ["React", "TailwindCSS", "FastAPI", "MongoDB", "Python", "ML"],
       github: "https://github.com/SharmaSanskar/ml-gradhelp",
       live: "https://gradhelp.vercel.app",
     },
@@ -39,8 +39,8 @@ const Projects = () => {
       name: "Concord Video Chat",
       img: "/concord.gif",
       description:
-        "Video chat application with ability to add friends and create rooms. Made using React, Redux, Firebase, Node.js and SASS modules.",
-      tags: ["React", "SASS", "Node.js", "Firebase", "WebRTC"],
+        "React, Firebase and WebRTC video chat application with ability find, add and video chat with new friends based on common topics. Can also create rooms to do group video chat with friends.",
+      tags: ["React", "SASS", "Firebase", "Node.js", "WebRTC"],
       github: "https://github.com/SharmaSanskar/react-concord-videochat",
       live: "",
     },
@@ -67,7 +67,7 @@ const Projects = () => {
               <div className={styles.buttons}>
                 {proj.live ? (
                   <button className={styles.live}>
-                    <a href={proj.live}>
+                    <a href={proj.live} target="_blank" rel="noreferrer">
                       <FiExternalLink />
                       <h5>Try it</h5>
                     </a>

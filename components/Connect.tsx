@@ -90,7 +90,7 @@ const Connect = () => {
           Is this the <span>end?</span>
         </blockquote>
         <blockquote>
-          Or just a new <span>beginning</span>
+          Or a new <span>beginning. .</span>
         </blockquote>
       </div>
     </section>
