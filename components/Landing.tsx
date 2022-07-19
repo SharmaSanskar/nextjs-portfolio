@@ -1,6 +1,7 @@
 import styles from "../styles/layouts/Landing.module.scss";
 import { IoDownloadOutline, IoChevronForwardOutline } from "react-icons/io5";
 import AnimatedDev from "./AnimatedDev";
+import { Link } from "react-scroll";
 
 const Landing = () => {
   return (
@@ -18,10 +19,16 @@ const Landing = () => {
         </h3>
         <div className={styles.buttons}>
           <button className={styles.contact}>
-            <a href="#connect">
+            <Link
+              to="connect"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
               <IoChevronForwardOutline />
               <p>Contact Me</p>
-            </a>
+            </Link>
           </button>
           <button className={styles.resume}>
             <a href="/Sanskar-Resume.pdf">

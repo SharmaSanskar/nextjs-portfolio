@@ -38,7 +38,7 @@ const About = () => {
             past few years using modern web technologies for both my
             undergraduate work and personal projects. I enjoy technology because
             it gives me the opportunity to continually learn and explore new
-            areas such as UI/UX design, web programming, and machine learning.
+            areas such as UI/UX design, web development, and machine learning.
             <br />
             <br />I am result-oriented individual and believe in providing the
             best user experience possible. In my spare time, I enjoy sketching

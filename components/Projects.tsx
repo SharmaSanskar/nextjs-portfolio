@@ -19,7 +19,7 @@ const Projects = () => {
       name: "CryptoPlace",
       img: "/cryptoplace.gif",
       description:
-        "Next.js, TailwindCSS and Redis web application providing information about top cryptos and latest crypto news. Also has Flask backend to serve Sentiment analysis and Price prediction ML models.",
+        "Next.js, TailwindCSS and Redis web application providing information about top cryptos and latest crypto news. Also has a Flask backend to serve Sentiment analysis and Price prediction ML models.",
       tags: ["Next.js", "TailwindCSS", "Flask", "Redis", "Python", "ML"],
       github: "https://github.com/SharmaSanskar/nextjs-cryptoplace",
       live: "https://cryptoplace.vercel.app",

@@ -9,7 +9,7 @@ import {
   SiSass,
   SiTailwindcss,
   SiNodedotjs,
-  SiFastapi,
+  SiFlask,
   SiFirebase,
   SiMongodb,
   SiGit,
@@ -66,7 +66,7 @@ const Skills = () => {
               <SiNodedotjs /> Node.js
             </li>
             <li>
-              <SiFastapi /> FastAPI
+              <SiFlask /> Flask
             </li>
             <li>
               <SiFirebase /> Firebase
