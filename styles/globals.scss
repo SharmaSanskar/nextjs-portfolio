@@ -18,9 +18,9 @@ a {
   font-size: clamp(1rem, 1vw + 1rem, 1.2rem);
   cursor: pointer;
   font-family: "Work Sans", sans-serif;
-  &.active {
-    font-weight: bold;
-  }
+  // &.active {
+  //   font-weight: bold;
+  // }
 }
 
 ul {

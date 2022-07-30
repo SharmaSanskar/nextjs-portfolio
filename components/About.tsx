@@ -13,12 +13,12 @@ const About = () => {
       id: 1,
       name: "IBM Data Science Professional Certificate",
       description:
-        "Completed 10 courses related to Data Sceince and ML in Python",
+        "Completed 10 courses related to Data Science and ML in Python",
     },
     {
       id: 2,
       name: "Deep Learning, IIT Ropar",
-      description: "Among one of the toppers of the course",
+      description: "Amongst one of the toppers of the course",
     },
   ];
   return (
@@ -49,7 +49,7 @@ const About = () => {
             <Image
               className={styles.myimage}
               alt="My image"
-              src="/profile-lavender.jpg"
+              src="/profile-lavender.png"
               width={200}
               height={200}
             />

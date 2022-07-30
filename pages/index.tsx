@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Sanskar Sharma - Portfolio</title>
         <meta
           name="description"
           content="Portfolio website for Frontend Web Developer Sanskar Sharma"

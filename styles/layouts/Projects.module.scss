@@ -9,6 +9,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  p {
+    text-align: center;
+    .link {
+      @include m.text-underline($totallyPurple);
+    }
+  }
 }
 
 .card {

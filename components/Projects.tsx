@@ -84,6 +84,17 @@ const Projects = () => {
             </div>
           </div>
         ))}
+        <p>
+          Take a look at some of my other projects at{" "}
+          <a
+            href="https://github.com/SharmaSanskar"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.link}
+          >
+            GitHub
+          </a>
+        </p>
       </div>
     </section>
   );
